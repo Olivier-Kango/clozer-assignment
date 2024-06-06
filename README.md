@@ -2,11 +2,10 @@
 
 <div align="center">
 
-  <img src="https://github.com/Olivier-Kango/clozer-assignment/assets/108806646/c471eb9c-0f38-4779-b4c9-9f52d51f493b" alt="clozer_logo" width="140"  height="auto" />
+  <img src="https://github.com/Olivier-Kango/clozer-assignment/assets/108806646/c471eb9c-0f38-4779-b4c9-9f52d51f493b" alt="clozer_logo" width="200"  height="auto" />
   <br/>
 
- <h3><b>Clozer Assignment</b></h3>
-  <h3>README</h3>
+ <h3><b>README Assignment</b></h3>
 
 </div>
 
