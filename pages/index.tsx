@@ -1,6 +1,8 @@
 import type { InferGetStaticPropsType, GetStaticProps } from 'next';
 import ProfilePage from './user/profile';
+import MyMusic from './user/music';
 import { getUserData } from './api/user';
+import { getTabsData } from './api/tabs'; 
 
 export const getStaticProps: GetStaticProps = async (context) => {
   try {
@@ -22,9 +24,12 @@ export default function Home({
 
   console.log("User data in Home component:", userData);
 
+  const tabsData = getTabsData();
+
   return (
     <div>
       <ProfilePage userData={userData} />
+      <MyMusic tabsData={userData} /> 
     </div>
   );
 }
