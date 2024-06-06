@@ -194,8 +194,6 @@ Feel free to check the [issues page](https://github.com/Olivier-Kango/clozer-ass
 
 ## 🙏 Acknowledgments <a id="acknowledgements"></a>
 
-I would like to thank:
-
 - I would like to express my sincere gratitude to Clozer for this wonderful opportunity. This challenge allows me to showcase my passion and skills in web development. Thank you for providing a platform where I can grow and demonstrate my abilities.
 - I would also like to extend my heartfelt thanks to [Nabil Zouhir](https://github.com/nabilzouhir?tab=overview&from=2024-06-01&to=2024-06-06), Chief of Technology at Clozer, for the phone screen interview we had. Your insights and guidance were invaluable and greatly appreciated.
 - I would also like to thank my parents and my brother Théophile for their unwavering support during the difficult period of job searching after my studies. Your encouragement and belief in me have been invaluable.
