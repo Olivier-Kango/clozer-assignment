@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <img src="https://github.com/Olivier-Kango/clozer-assignment/assets/108806646/64bd2a58-ef39-4cb7-890d-02680a9c9027" alt="clozer_logo" width="140"  height="auto" />
+  <img src="https://github.com/Olivier-Kango/clozer-assignment/assets/108806646/c471eb9c-0f38-4779-b4c9-9f52d51f493b" alt="clozer_logo" width="140"  height="auto" />
   <br/>
 
  <h3><b>Clozer Assignment</b></h3>
