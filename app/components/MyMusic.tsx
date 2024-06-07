@@ -31,7 +31,7 @@ const MyMusic: React.FC<MyMusicProps> = ({  tabsData, onClick }) => {
           <Card key={music.id} details={music} onClick={onClick} />
         ))
       ) : (
-        <div>Loading music data...</div>
+        <p>Loading music data...</p>
       )}
     </div>
   );

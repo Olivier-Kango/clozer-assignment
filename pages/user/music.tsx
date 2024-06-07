@@ -22,9 +22,9 @@ const MusicPage: React.FC<MusicPageProps> = ({ tabsData }) => {
   return (
     <div>
       {loading ? (
-        <div>Loading...</div>
+        <p>Loading...</p>
       ) : (
-        <MyMusic onClick={handleDetailsClick} />
+        <MyMusic onClick={handleDetailsClick} tabsData={[]} />
       )}
     </div>
   );

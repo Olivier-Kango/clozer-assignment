@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import styles from './styling/UserProfile.module.css';
 
 interface UserProfileProps {
   avatar?: string;
@@ -10,13 +11,13 @@ const UserProfile: React.FC<UserProfileProps> = ({ avatar = '', onClick }) => {
   console.log("Rendering UserProfile with avatar:", avatar);
 
   return (
-    <div className="user-profile">
+    <div className={styles['user-profile']}>
       {avatar ? (
-        <Image src={avatar} alt="User Avatar" width={100} height={100} />
+        <Image src={avatar} alt="User Avatar" width={366} height={460} />
       ) : (
-        <div>No Avatar Available</div>
+        <p className={styles['no-avatar']}>No Avatar Available</p>
       )}
-      <button onClick={onClick} className="detail-button">Voir les détails</button>
+      {/* <button onClick={onClick} className={styles['detail-button']}>Voir les détails</button> */}
     </div>
   );
 };

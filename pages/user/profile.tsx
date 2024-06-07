@@ -11,7 +11,7 @@ const ProfilePage: React.FC<ProfilePageProps> = ({ userData }) => {
   };
 
   if (!userData) {
-    return <div>Error loading user data</div>; // Gérer le cas où userData est null
+    return <p>Error loading user data</p>;
   }
 
   return (
