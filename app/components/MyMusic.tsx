@@ -4,10 +4,11 @@ import Card from '../components/ui/Card';
 import { getTabsData } from '@/pages/api/tabs';
 
 interface MyMusicProps {
+  tabsData: TabsData[];
   onClick: () => void;
 }
 
-const MyMusic: React.FC<MyMusicProps> = ({ onClick }) => {
+const MyMusic: React.FC<MyMusicProps> = ({  tabsData, onClick }) => {
   const [musicData, setMusicData] = useState<TabsData[] | null>(null);
 
   useEffect(() => {

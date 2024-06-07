@@ -2,11 +2,11 @@ import React from 'react';
 import Image from 'next/image';
 
 interface UserProfileProps {
-  avatar: string;
+  avatar?: string;
   onClick: () => void;
 }
 
-const UserProfile: React.FC<UserProfileProps> = ({ avatar, onClick }) => {
+const UserProfile: React.FC<UserProfileProps> = ({ avatar = '', onClick }) => {
   console.log("Rendering UserProfile with avatar:", avatar);
 
   return (
