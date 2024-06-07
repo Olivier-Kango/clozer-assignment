@@ -11,7 +11,11 @@ const UserProfile: React.FC<UserProfileProps> = ({ avatar, onClick }) => {
 
   return (
     <div className="user-profile">
-      <Image src={avatar} alt="User Avatar" width={100} height={100} />
+      {avatar ? (
+        <Image src={avatar} alt="User Avatar" width={100} height={100} />
+      ) : (
+        <div>No Avatar Available</div>
+      )}
       <button onClick={onClick} className="detail-button">Voir les détails</button>
     </div>
   );

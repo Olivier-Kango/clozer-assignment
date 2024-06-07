@@ -7,24 +7,21 @@ import { getTabsData } from './api/tabs';
 export const getStaticProps: GetStaticProps = async (context) => {
   try {
     const userData = await getUserData();
-    console.log("User data fetched in getStaticProps of index.tsx:", userData);
+    const tabsData = await getTabsData();
     return { props: { userData } };
   } catch (error) {
-    console.error("Error in getStaticProps of index.tsx:", error);
     return { props: { userData: null } };
+    return { props: { userData: null, tabsData: [] } };
   }
 };
 
 export default function Home({
   userData,
+  tabsData,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   if (!userData) {
     return <div>Error loading user data</div>;
   }
-
-  console.log("User data in Home component:", userData);
-
-  const tabsData = getTabsData();
 
   return (
     <div>

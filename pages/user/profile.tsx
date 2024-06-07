@@ -3,18 +3,21 @@ import UserProfile from '../../app/components/UserProfile';
 import { UserData } from '../../types/UserData';
 
 interface ProfilePageProps {
-  userData: UserData;
+  userData: UserData | null;
 }
 
 const ProfilePage: React.FC<ProfilePageProps> = ({ userData }) => {
   const handleDetailsClick = () => {
-    console.log("User details clicked:", userData);
   };
+
+  if (!userData) {
+    return <div>Error loading user data</div>; // Gérer le cas où userData est null
+  }
 
   return (
     <div>
-      <UserProfile avatar={userData?.avatar} onClick={handleDetailsClick} />
-      <h1>{userData?.username}</h1>
+      <UserProfile avatar={userData.avatar} onClick={handleDetailsClick} />
+      <h1>{userData.username}</h1>
     </div>
   );
 };

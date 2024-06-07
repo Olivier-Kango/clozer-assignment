@@ -23,8 +23,6 @@ const MyMusic: React.FC<MyMusicProps> = ({ onClick }) => {
     fetchData();
   }, []);
 
-  console.log("Rendering MyMusic with music data:", musicData);
-
   return (
     <div>
       {musicData ? (
