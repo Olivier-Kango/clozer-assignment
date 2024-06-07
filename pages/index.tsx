@@ -2,6 +2,7 @@ import type { InferGetStaticPropsType, GetStaticProps } from 'next';
 import ProfilePage from './user/profile';
 import MyMusic from './user/music';
 import { getUserData } from './api/user';
+import styles from '../app/components/styling/Home.module.css';
 
 export const getStaticProps: GetStaticProps = async (context) => {
   try {
@@ -20,7 +21,7 @@ export default function Home({
   }
 
   return (
-    <div>
+    <div className={styles['container']}>
       <ProfilePage userData={userData} />
       <MyMusic tabsData={userData} /> 
     </div>

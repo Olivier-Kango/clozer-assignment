@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { TabsData } from '@/types/tabsData';
 import Card from '../components/ui/Card';
 import { getTabsData } from '@/pages/api/tabs';
+import styles from '../components/styling/MyMusic.module.css';
 
 interface MyMusicProps {
   tabsData: TabsData[];
@@ -25,11 +26,13 @@ const MyMusic: React.FC<MyMusicProps> = ({  tabsData, onClick }) => {
   }, []);
 
   return (
-    <div>
+    <div className={styles['music-container']}>
       {musicData ? (
-        musicData.map((music: TabsData) => (
-          <Card key={music.id} details={music} onClick={onClick} />
-        ))
+        musicData
+          .filter((music: TabsData) => music.type === "MUSIC")
+          .map((music: TabsData) => (
+            <Card key={music.id} details={music} onClick={onClick} />
+          ))
       ) : (
         <p>Loading music data...</p>
       )}
