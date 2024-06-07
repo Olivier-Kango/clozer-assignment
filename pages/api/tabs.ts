@@ -5,6 +5,7 @@ export async function getTabsData() {
     const res = await fetch('https://europe-west3-clozer-bc97fb95.cloudfunctions.net/idols/RKAs4VxFlOZ1q2uWhD6UIYgybuj2/tabs?isEditor=false');
     const tabsDataArray = await res.json();
     const tabsData = tabsDataArray;
+    console.log(tabsData)
     return tabsData;
   } catch (error) {
     throw error;

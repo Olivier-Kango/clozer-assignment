@@ -1,6 +1,7 @@
 import React from 'react';
 import { TabsData } from '../../../types/tabsData';
 import Image from 'next/image';
+import styles from '../styling/Card.module.css'; 
 
 interface CardProps {
   details: TabsData;
@@ -20,15 +21,12 @@ const Card: React.FC<CardProps> = ({ details, onClick }) => {
   }
 
   return (
-    <div className="card" onClick={onClick}>
-      <h3>{Album}</h3>
-      <p>{Artists}</p>
-      {CoverURL && <Image src={CoverURL} alt={Album || "Cover"} width={200} height={200} />}
-      {/* <h3>{details.title}</h3> */}
-      {/* <p>{details.artists.join(', ')}</p>
-      <a href={details.links[0].url} target="_blank" rel="noopener noreferrer">
-        Listen
-      </a> */}
+    <div className={styles.card} onClick={onClick}>
+      {CoverURL && <Image src={CoverURL} alt={Album || "Cover"} width={132} height={132} />}
+      <div>
+        <h3>{Album}</h3>
+        <p>{Artists}</p>
+      </div>
     </div>
   );
 };

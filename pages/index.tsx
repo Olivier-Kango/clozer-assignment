@@ -1,6 +1,7 @@
 import type { InferGetStaticPropsType, GetStaticProps } from 'next';
 import ProfilePage from './user/profile';
 import MyMusic from './user/music';
+import NavigationBar from '../app/components/NavigationBar';
 import { getUserData } from './api/user';
 import styles from '../app/components/styling/Home.module.css';
 
@@ -23,6 +24,7 @@ export default function Home({
   return (
     <div className={styles['container']}>
       <ProfilePage userData={userData} />
+      <NavigationBar />
       <MyMusic tabsData={userData} /> 
     </div>
   );
