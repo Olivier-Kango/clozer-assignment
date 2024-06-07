@@ -9,7 +9,7 @@ interface CardShopProps {
 }
 
 const CardShop: React.FC<CardShopProps> = ({ details, onClick }) => {
-  const { image_url, price } = details;
+  const { image_url, price, title } = details;
 
   return (
     <div className={styles.card}>
@@ -21,6 +21,7 @@ const CardShop: React.FC<CardShopProps> = ({ details, onClick }) => {
           height={214}
         />
       </div>
+      <h3>{title}</h3>
       <p>{price}</p>
     </div>
   );

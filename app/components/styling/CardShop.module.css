@@ -1,23 +1,40 @@
 .card {
   display: flex;
   flex-direction: column;
-  gap: 23px;
+  gap: 10px;
   position: relative;
   border-radius: 8px;
-  background: rgba(78, 77, 77, 0.3);
   opacity: 1;
+  margin-top: 0;
+  cursor: pointer;
 }
 
 .card h3 {
+  margin: 0px;
+  font-family: Arial, sans-serif;
+  color: rgb(255, 255, 255);
   font-size: 18px;
-  margin-bottom: 0;
+  font-weight: 600;
+  line-height: 24px;
+  word-break: break-word;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card p {
-  font-size: 12px;
-  margin-bottom: 16px;
-  margin-top: 5px;
-  color: rgb(186, 185, 185);
+  margin: 0px;
+  font-family: Arial, sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  height: 20px;
 }
 
 .card img {
