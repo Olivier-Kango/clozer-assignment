@@ -36,11 +36,10 @@ const MyMerch: React.FC<MyMerchProps> = ({ tabsData, onClick }) => {
             .map((merch: TabsData) => (
               <div key={merch.id} className={styles.card}>
                 {merch.items.map((item, index) => {
-                  // Vérifiez d'abord si l'élément est de type ShopItem avant de le passer à CardShop
                   if ('details' in item && 'image_url' in item.details && 'price' in item.details) {
                     return <CardShop key={index} details={item.details as ShopDetails} onClick={onClick} />;
                   }
-                  return null; // Ignore les éléments qui ne sont pas de type ShopItem
+                  return null;
                 })}
               </div>
             ))

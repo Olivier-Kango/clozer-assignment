@@ -17,8 +17,8 @@ const CardShop: React.FC<CardShopProps> = ({ details, onClick }) => {
         <Image
           src={image_url}
           alt="image"
-          width={200}
-          height={200}
+          width={214}
+          height={214}
         />
       </div>
       <p>{price}</p>

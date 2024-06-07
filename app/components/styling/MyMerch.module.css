@@ -20,3 +20,12 @@
   justify-content: center;
 }
 
+.card {
+  margin-top: 8px;
+  padding-bottom: 8px;
+  width: 100%;
+  display: flex;
+  gap: 23px;
+  scrollbar-width: none;
+}
+
