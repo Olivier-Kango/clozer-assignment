@@ -10,6 +10,15 @@
   border-radius: 5%;
 }
 
+.profile-page h1 {
+  margin: 0px;
+  font-family: Epilogue, sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 110%;
+}
+
 .detail-button {
   background-color: #0070f3;
   color: white;
