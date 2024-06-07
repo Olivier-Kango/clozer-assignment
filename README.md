@@ -81,7 +81,7 @@ Please click on the video below 👇 for more explanation
 
 > Please click 👇 the link below to open the webpage in your browser
 
-- ### [Clozer Assignment](https://)
+- ### [Clozer Assignment](https://clozer-assignment-six.vercel.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
