@@ -1,7 +1,12 @@
-.card {
+.container {
   display: flex;
+  flex-wrap: wrap;
   gap: 23px;
-  position: relative;
+  overflow-x: hidden; /* Empêche le défilement horizontal */
+}
+
+.cardContent {
+  flex: 0 0 calc(50% - 23px);
   border-radius: 8px;
   background: rgba(78, 77, 77, 0.3);
   opacity: 1;
@@ -21,4 +26,26 @@
 
 .card img {
   border-radius: 8px;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.navigation-buttons button {
+  background: rgba(255, 255, 255, 0.269);
+  margin: 0 10px;
+  padding: 5px 10px;
+  border: none;
+  color: #dddddd;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.navigation-buttons button:hover {
+  background: rgba(176, 176, 176, 0.587); /* Couleur gris proche du noir */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Effet de profondeur 3D */
 }
