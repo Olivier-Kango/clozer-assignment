@@ -51,6 +51,7 @@ const Card: React.FC<CardProps> = ({ details, onClick }) => {
             <div className={styles.cardText}>
               <h3>{(item.details as EventDetails).Title}</h3>
               <p>{(item.details as EventDetails).Artists.join(', ')}</p>
+              <button className={styles.play}>Play</button>
             </div>
           </div>
         ))}
