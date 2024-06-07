@@ -2,7 +2,7 @@ import type { InferGetStaticPropsType, GetStaticProps } from 'next';
 import ProfilePage from './user/profile';
 import MyMusic from './user/music';
 import MyMerch from './user/merch';
-import NavigationBar from '../app/components/NavigationBar';
+import NavigationBar from '../app/components/layout/NavigationBar';
 import { getUserData } from './api/user';
 import styles from '../app/components/styling/Home.module.css';
 

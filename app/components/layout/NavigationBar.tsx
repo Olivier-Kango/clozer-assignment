@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../components/styling/NavigationBar.module.css';
+import styles from '../styling/NavigationBar.module.css';
 
 const NavigationBar: React.FC = () => {
   return (
