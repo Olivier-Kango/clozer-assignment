@@ -17,7 +17,6 @@
   vertical-align: middle;
   appearance: none;
   text-decoration: none;
-  font-family: Arial, sans-serif;
   padding: 6px 16px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   flex-shrink: 0;
@@ -58,7 +57,6 @@
 
 .cardText h3 {
   margin: 0px;
-  font-family: Arial, sans-serif;
   color: rgb(255, 255, 255);
   font-size: 14px;
   font-weight: 600;
@@ -70,7 +68,6 @@
 
 .cardText p {
   margin: 0px;
-  font-family: Arial, sans-serif;
   color: rgb(255, 255, 255);
   font-size: 12px;
   font-weight: 500;
