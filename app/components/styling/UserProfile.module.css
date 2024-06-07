@@ -2,14 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
-  /* background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 200px;
-  margin: 0 auto; */
+  align-items: center; 
 }
 
 .user-profile img {
@@ -33,4 +26,14 @@
 .no-avatar {
   color: #999;
   font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .user-profile img {
+    width: 100vw !important;
+    height: 100vh !important;
+    object-fit: cover;
+    border-radius: 0;
+    margin: 0;
+  }
 }
