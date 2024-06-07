@@ -57,21 +57,28 @@
 }
 
 .cardText h3 {
-  font-size: 18px;
-  margin-bottom: 0;
-  white-space: nowrap;
-  overflow: hidden; 
+  margin: 0px;
+  font-family: Arial, sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .cardText p {
+  margin: 0px;
+  font-family: Arial, sans-serif;
+  color: rgb(255, 255, 255);
   font-size: 12px;
-  margin-bottom: 16px;
-  margin-top: 5px;
-  color: #bab9b9;
-  white-space: nowrap;
+  font-weight: 500;
+  line-height: 20px;
+  opacity: 0.7;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .cardImage {
