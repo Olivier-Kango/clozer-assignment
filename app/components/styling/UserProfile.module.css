@@ -11,12 +11,13 @@
 }
 
 .profile-page h1 {
-  margin: 0px;
+  margin: 5px;
   font-family: Epilogue, sans-serif;
   color: rgb(255, 255, 255);
   font-size: 40px;
   font-weight: 600;
   line-height: 110%;
+  text-align: center;
 }
 
 .detail-button {

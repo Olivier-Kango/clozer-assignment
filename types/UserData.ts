@@ -3,7 +3,7 @@
 export interface UserData {
   uid: string;
   name: string;
-  username: string;
+  usernam: string;
   avatar: string;
   bio: string;
   links: any;

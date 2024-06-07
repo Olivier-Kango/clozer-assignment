@@ -15,10 +15,12 @@ const ProfilePage: React.FC<ProfilePageProps> = ({ userData }) => {
     return <p>Error loading user data</p>;
   }
 
+  const displayName = userData.display_name.text ? userData.display_name.text.toString() : '';
+
   return (
     <div className={styles['profile-page']}>
       <UserProfile avatar={userData.avatar} onClick={handleDetailsClick} />
-      <h1>{userData.username}</h1>
+      <h1>{displayName}</h1>
     </div>
   );
 };
