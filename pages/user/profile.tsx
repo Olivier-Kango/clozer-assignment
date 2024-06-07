@@ -13,8 +13,8 @@ const ProfilePage: React.FC<ProfilePageProps> = ({ userData }) => {
 
   return (
     <div>
-      <UserProfile avatar={userData.avatar} onClick={handleDetailsClick} />
-      <h1>{userData.username}</h1>
+      <UserProfile avatar={userData?.avatar} onClick={handleDetailsClick} />
+      <h1>{userData?.username}</h1>
     </div>
   );
 };
