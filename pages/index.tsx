@@ -2,6 +2,7 @@ import type { InferGetStaticPropsType, GetStaticProps } from 'next';
 import ProfilePage from './user/profile';
 import MyMusic from './user/music';
 import MyMerch from './user/merch';
+import Footer from '../app/components/layout/Footer';
 import NavigationBar from '../app/components/layout/NavigationBar';
 import { getUserData } from './api/user';
 import styles from '../app/components/styling/Home.module.css';
@@ -28,6 +29,7 @@ export default function Home({
       <NavigationBar />
       <MyMusic tabsData={userData} /> 
       <MyMerch tabsData={userData} /> 
+      <Footer />
     </div>
   );
 }
