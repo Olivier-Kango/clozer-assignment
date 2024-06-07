@@ -45,9 +45,21 @@
 
   .user-profile img {
     width: 100vw !important;
-    height: 100vh !important;
+    height: auto !important;
     object-fit: cover;
     border-radius: 0;
     margin: 0;
   }
+  
+  .user-profile img::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 70%; /* Adjust the height of the gradient as needed */
+    background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+    pointer-events: none; /* Allow clicks to pass through */
+  }
 }
+
