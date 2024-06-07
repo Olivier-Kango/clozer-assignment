@@ -13,8 +13,9 @@
   font-family: Arial, sans-serif;
 }
 
-.music-container {
-  display: flex;
+.merch-container {
+  display: flex !important;
+  width: 100%;
   align-items: center;
   justify-content: center;
 }

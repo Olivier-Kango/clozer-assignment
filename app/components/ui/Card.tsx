@@ -8,25 +8,38 @@ interface CardProps {
   onClick: () => void;
 }
 
-const Card: React.FC<CardProps> = ({ details, onClick }) => {
-  const item = details.items[0];
-  let Album: string | undefined;
-  let Artists: string[] | undefined;
-  let CoverURL: string | undefined;
+interface EventDetails {
+  Artists: string[];
+  CoverURL: string;
+  Title: string;
+}
 
-  if (item.details && 'Album' in item.details && 'Artists' in item.details && 'CoverURL' in item.details) {
-    Album = item.details.Album;
-    Artists = item.details.Artists;
-    CoverURL = item.details.CoverURL;
-  }
+const Card: React.FC<CardProps> = ({ details, onClick }) => {
+  const { items } = details;
+
+  // Filtrer les événements où Dean Martin est impliqué
+  const deanMartinEvents = items.filter(item =>
+    ('details' in item) && ('Artists' in item.details) && (item.details as EventDetails).Artists.includes('Dean Martin')
+  );
 
   return (
     <div className={styles.card} onClick={onClick}>
-      {CoverURL && <Image src={CoverURL} alt={Album || "Cover"} width={132} height={132} />}
-      <div>
-        <h3>{Album}</h3>
-        <p>{Artists}</p>
-      </div>
+       {deanMartinEvents.map(item => (
+        <div key={item.id} className={styles.cardContent}>
+          <div className={styles.cardImage}>
+            <Image
+              src={(item.details as EventDetails).CoverURL}
+              alt={(item.details as EventDetails).Title}
+              width={200}
+              height={200}
+            />
+          </div>
+          <div className={styles.cardText}>
+            <h3>{(item.details as EventDetails).Title}</h3>
+            <p>{(item.details as EventDetails).Artists.join(', ')}</p>
+          </div>
+        </div>
+      ))}
     </div>
   );
 };

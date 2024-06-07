@@ -1,4 +1,8 @@
+import { ReactNode } from "react";
+
 export interface TabsData {
+  price: ReactNode;
+  image_url: ReactNode;
   links: any;
   artists: any;
   coverURL: string;
@@ -110,14 +114,16 @@ interface ShopItem {
   is_hidden: boolean;
 }
 
-interface ShopDetails {
+interface Link {
+  url: string;
+  type: string;
+}
+
+export interface ShopDetails {
   image_url: string;
   links: Link[];
   price: string;
   title: string;
 }
 
-interface Link {
-  url: string;
-  type: string;
-}
+

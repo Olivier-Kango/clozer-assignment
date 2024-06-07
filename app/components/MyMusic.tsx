@@ -26,16 +26,19 @@ const MyMusic: React.FC<MyMusicProps> = ({  tabsData, onClick }) => {
   }, []);
 
   return (
-    <div className={styles['music-container']}>
-      {musicData ? (
-        musicData
-          .filter((music: TabsData) => music.type === "MUSIC")
-          .map((music: TabsData) => (
-            <Card key={music.id} details={music} onClick={onClick} />
-          ))
-      ) : (
-        <p>Loading music data...</p>
-      )}
+    <div className={styles['container']}>
+      <h2>My Music</h2>
+      <div className={styles['music-container']}>
+        {musicData ? (
+          musicData
+            .filter((music: TabsData) => music.type === "MUSIC")
+            .map((music: TabsData) => (
+              <Card key={music.id} details={music} onClick={onClick} />
+            ))
+        ) : (
+          <p>Loading music data...</p>
+        )}
+      </div>
     </div>
   );
 };

@@ -1,0 +1,25 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  position: relative;
+  border-radius: 8px;
+  background: rgba(78, 77, 77, 0.3);
+  opacity: 1;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.card p {
+  font-size: 12px;
+  margin-bottom: 16px;
+  margin-top: 5px;
+  color: rgb(186, 185, 185);
+}
+
+.card img {
+  border-radius: 8px;
+}
