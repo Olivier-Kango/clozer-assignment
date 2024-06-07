@@ -30,8 +30,8 @@ const Card: React.FC<CardProps> = ({ details, onClick }) => {
             <Image
               src={(item.details as EventDetails).CoverURL}
               alt={(item.details as EventDetails).Title}
-              width={200}
-              height={200}
+              width={132}
+              height={132}
             />
           </div>
           <div className={styles.cardText}>
